@@ -1,0 +1,11 @@
+2018/06/05 11:13:08 [emerg] 32332#32332: bind() to 0.0.0.0:80 failed (13: Permission denied)
+2018/06/05 11:14:01 [error] 32349#32349: *1 lua entry thread aborted: runtime error: content_by_lua(nginx.conf:15):3: attempt to perform arithmetic on field 'a' (a nil value)
+stack traceback:
+coroutine 0:
+	content_by_lua(nginx.conf:15): in function <content_by_lua(nginx.conf:15):1>, client: 127.0.0.1, server: , request: "GET /addition HTTP/1.1", host: "localhost"
+2018/06/05 11:14:01 [error] 32349#32349: *2 open() "learn2/html/favicon.ico" failed (2: No such file or directory), client: 127.0.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost"
+2018/06/05 11:14:01 [error] 32349#32349: *2 open() "learn2/html/favicon.ico" failed (2: No such file or directory), client: 127.0.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost"
+2018/06/05 11:30:52 [alert] 785#785: lua_code_cache is off; this will hurt performance in ../../learn2/conf/nginx.conf:62
+2018/06/05 11:30:52 [emerg] 785#785: bind() to 0.0.0.0:80 failed (13: Permission denied)
+2018/06/05 11:31:20 [alert] 809#809: lua_code_cache is off; this will hurt performance in ../../learn2/conf/nginx.conf:62
+2018/06/05 11:31:28 [error] 812#812: *1 open() "../../learn2/html/addition" failed (2: No such file or directory), client: 127.0.0.1, server: , request: "GET /addition?a=1&b=2 HTTP/1.1", host: "localhost"
